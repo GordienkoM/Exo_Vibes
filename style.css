@@ -1,0 +1,358 @@
+*{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;  
+}
+
+/*background multicouleur, trouver sur le sit: cssgradient.io */
+#container{
+    background: rgb(128,160,199);
+    background: radial-gradient(circle, rgba(128,160,199,1) 0%, rgba(238,174,202,1) 10%, rgba(238,174,202,1) 20%, rgba(148,187,233,1) 30%, rgba(238,174,202,1) 50%, rgba(148,187,233,1) 70%, rgba(238,174,202,1) 80%, rgba(238,174,202,1) 90%, rgba(128,160,199,1) 100%);
+    max-width: 1024px;
+    margin: auto;
+}
+
+header{
+    max-width: 860px;
+    margin: auto;
+}
+
+header nav{
+    display:flex;
+    justify-content: space-between;
+    color:whitesmoke;
+    align-items: center;
+}
+
+nav.paddingCommun{
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+}
+
+header nav img{
+    width:60px;
+}
+
+header nav div{
+    display: flex; 
+}
+
+header nav p{
+    margin: 0.5em;
+}
+
+
+main{
+    background-color: whitesmoke;
+    max-width: 860px;
+    margin: auto;
+}
+
+
+#section1{
+    text-align: center;
+    background: url('img/section1.jpg') no-repeat center center;
+    background-size: cover;
+    color:rgb(24, 24, 77);
+    padding-top: 3em;
+    padding-bottom: 2em; 
+    font-size: 13pt;
+}
+
+#section1 a{
+    border: 2px solid rgb(24, 24, 77); 
+}
+
+
+#section2 {
+    display:flex;
+    justify-content:space-between;
+    font-size: 11pt;
+} 
+
+#section2>div {
+    flex: 1;
+    padding: 0.5em;
+}
+
+div.section2-deSection2-part{
+    position: relative;
+    padding: 0 2em;
+}
+
+div.section2-deSection2-part h5 {
+    margin: 0;
+    padding: 0;
+}
+
+
+div.sectionsDeSection2  i{
+    position: absolute;
+    top: 0;
+    left: 0.5em;
+}
+
+#grandtexte{
+    font-size: 150%;
+}
+
+/*accardion début */
+#accordion{
+    width: 50%;
+    max-width: 300px;
+    margin: auto;
+    padding: 0;   
+}
+
+.textrose{
+    color: #f22589;
+}
+
+.accordion-part{
+    border: 1px solid #aaa;
+    padding: 0 2em;
+    position: relative;
+    margin: 1em 0; 
+}
+.accordion-part h5{
+    margin: 1rem 0;
+    cursor: pointer;
+}
+.accordion-part p{
+    text-align: justify;
+    height: 0em; margin: 0em 0;
+    transition: margin 0.5s, height 0.5s;
+    overflow: hidden;
+}
+.accordion-part i{
+    position: absolute;
+    top: 1em;
+    left: 1em;
+}
+.accordion-part i.fas:before{
+    content: "\f067";
+}
+
+.acc-open i.fas:before{
+    content: "\f068";
+}
+
+.acc-open p{
+    height: 3.5em;
+    margin: 1em 0;
+}
+/*accardion fin */
+
+#section3 div{
+    display:flex;
+    flex-wrap: wrap;
+} 
+
+#section3 nav{
+    display:flex;
+    justify-content: space-between;
+    color:gray;
+}
+
+#section4 p.button{
+    text-align: center;
+    color:#f22589;
+} 
+
+#galerie div {
+    width:25%;
+} 
+
+#galerie div img{
+    width:100%;
+} 
+
+
+
+#galerieMenu a{
+    margin:0.5em;
+}
+
+.active{
+    color:#f22589;
+    font-weight: bold;
+}
+
+#section4 blockquote{
+    display:flex;
+    margin:0;
+}
+
+#section4 img{
+    width:100px;
+    border-radius: 100px;
+    margin-right: 1em;
+}
+
+.temoignage{
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+
+/*changer la direction à chaque deuxiem blockquote qui a parent section4 */
+#section4 blockquote:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+#section5 {
+    text-align: center;
+    background: url('img/section5.gif') no-repeat center center;
+    background-size: cover;
+    color:whitesmoke;
+    padding-top: 3em;
+    padding-bottom: 2em; 
+}
+
+#section5 a{
+    border: 2px solid #f22589;
+    padding: 0.5em 1em;
+}
+
+#section5 p.button{
+    margin:3em;
+}
+
+
+#formulaire{
+    display:flex;
+    margin:0;
+}
+#formulaire div{
+    flex:1;
+}
+
+#send{
+    margin-left:50%;
+    color:whitesmoke;
+    background-color: #f22589;
+    border: 2px solid #f22589;
+    padding: 0.5em 1em;
+}
+
+#section7 {
+    display:flex;
+    background-color:black;
+    color:whitesmoke;
+    padding-top: 3em;
+    padding-bottom: 2em; 
+}
+
+#section7 div{
+    flex:1;
+    padding: 0.5em;
+}
+
+#section7 hr{
+    margin-left:0;
+}
+
+
+input::placeholder{
+    color:white;
+}
+
+#section7 i{
+    margin:5px;
+    width:10px
+}
+
+
+footer{
+    max-width: 860px;
+    margin: auto;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    display:flex;
+    justify-content: space-between;
+    color:whitesmoke;
+}
+
+
+footer nav{
+    display: flex; 
+}
+
+footer nav p{
+    margin: 0.5em;;
+}
+
+
+
+#subscribe{
+
+    color:whitesmoke;
+    background-color: black;
+    border: 2px solid #f22589;
+    padding: 0.5em 1em;
+    margin-top: 1em;
+}
+
+
+
+
+
+
+
+.majuscule {
+    text-transform: uppercase;
+}
+
+.textcenter{
+    text-align: center;
+}
+
+.bold{ 
+    font-weight: bold;
+}
+
+.paddingCommun{
+    padding: 1em 6em 2em;
+}
+
+.lienRose{
+    color:#f22589
+}
+
+.tiretRose{
+    
+    background-color: #f22589;
+    border:none;
+    height:3px;
+    width: 5em;  
+}
+
+.button a{
+    border: 2px solid #f22589;
+    padding: 0.5em 1em;
+
+}
+
+.button{
+    margin: 2em 2em 2em 0;
+;
+}
+
+.champ{
+    color:white;
+    background-color: rgb(180, 179, 179);
+    padding: 1em;
+    border: none;
+    width:95%;
+}
+
+
+
+/*Animation */
+#galerie div.images{
+
+}
+
